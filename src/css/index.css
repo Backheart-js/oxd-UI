@@ -4,14 +4,83 @@
   margin: 0;
 }
 
+button {
+  border: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-x {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-y {
+  display: flex;
+  align-items: center;
+}
+
 #header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 100px;
-  filter: drop-shadow(0px 15px 7.5px rgba(0, 0, 0, 0.08));
-  background-color: #11193c;
+  padding-left: 29px;
+  padding-right: 48px;
+  background-color: #11193C;
+  z-index: 99;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header__wrapper--right {
+  justify-content: space-between;
+  height: 60px;
+  width: 285px;
+}
+
+.header__brand-wrapper {
+  display: flex;
+}
+
+.header__brand--name {
+  margin-left: 15px;
+}
+.header__brand--name span {
+  font-family: "inter";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  font-style: normal;
+  color: #fff;
+  user-select: none;
+}
+
+.header__slogan-wrapper {
+  color: #fff;
+  margin-left: 104px;
+}
+
+.header__noti-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__logout-btn {
+  color: #fff;
+  border-radius: 10px;
+  background-color: #2464FC;
 }
 
 /* --main--- */
@@ -121,6 +190,19 @@
   font-weight: 400;
   line-height: 20px;
   color: #11193c;
+}
+
+#content {
+  margin-top: 100px;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 269px;
+  padding-left: 29px;
 }
 
 /*# sourceMappingURL=index.css.map */
