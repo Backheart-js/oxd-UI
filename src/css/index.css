@@ -32,7 +32,7 @@ button {
   height: 100px;
   padding-left: 29px;
   padding-right: 48px;
-  background-color: #11193C;
+  background-color: #11193c;
   z-index: 99;
 }
 
@@ -80,7 +80,7 @@ button {
 .header__logout-btn {
   color: #fff;
   border-radius: 10px;
-  background-color: #2464FC;
+  background-color: #2464fc;
 }
 
 /* --main--- */
@@ -91,28 +91,31 @@ button {
   position: absolute;
   right: 0;
   bottom: 0;
-  border-top-left-radius: 10px;
   top: 130px;
+  border-top-left-radius: 10px;
   filter: drop-shadow(0px 0px 7.5px rgba(0, 0, 0, 0.08));
   border: 1px solid #eee;
   padding: 50px 48px;
+  display: flex;
+  justify-content: space-between;
 }
-.main .main__left {
+.main .main-left {
   width: 650px;
   height: 630px;
 }
-.main .main__left .main__left-header {
+.main .main-left .main-left__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
-.main .main__left .main__left-header .main__left-heading {
+.main .main-left .main-left__header h2 {
   color: #11193c;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
 }
-.main .main__left .main__left-header .main__left-btn {
+.main .main-left .main-left__header button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -120,61 +123,81 @@ button {
   line-height: 28px;
   color: #2464fc;
 }
-.main .main__left .main__left-container .main__left-content {
+.main .main-left .main-left__content {
   background-color: #fff;
   border-radius: 10px;
-  padding: 35px;
+  padding: 20px 35px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post {
+.main .main-left .main-left__content .main-left__content--post {
   display: flex;
   margin: 10px 0;
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post img {
+.main .main-left .main-left__content .main-left__content--post img {
   width: 130px;
   height: 90px;
   border-radius: 4px;
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post div {
+.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date {
   padding: 5px 4px 5px 10px;
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post div span {
+.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span {
   display: flex;
+  align-items: center;
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post div span span {
+.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post h4 {
+.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span button {
+  width: 36px;
+  height: 18px;
+  background-color: #ff4b75;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  margin-left: 6px;
+}
+.main .main-left .main-left__content .main-left__content--post h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
   color: #11193c;
   margin: 4px 0;
 }
-.main .main__left .main__left-container .main__left-content .main__left-content-post h5 {
+.main .main-left .main-left__content .main-left__content--post h5 {
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
   color: #11193c;
 }
-.main .main__left .main__left-bottom .main__left-bottom-content {
+.main .main-left .main-left__bottom {
   background-color: #fff;
   border-radius: 10px;
-  padding: 35px;
+  padding: 29px 35px;
   display: flex;
 }
-.main .main__left .main__left-bottom .main__left-bottom-content p {
+.main .main-left .main-left__bottom p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
 }
-.main .main__left .main__left-bottom .main__left-bottom-content div span {
+.main .main-left .main-left__bottom .main-left__bottom--content {
+  margin-left: 24px;
+  filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
+}
+.main .main-left .main-left__bottom .main-left__bottom--content span {
   display: flex;
 }
-.main .main__left .main__left-bottom .main__left-bottom-content div span button {
+.main .main-left .main-left__bottom .main-left__bottom--content span button {
   width: 70px;
   height: 22px;
   border-radius: 100px;
@@ -184,11 +207,89 @@ button {
   color: #00e38c;
   border: none;
   outline: none;
+  margin-right: 15px;
 }
-.main .main__left .main__left-bottom .main__left-bottom-content div span h4 {
+.main .main-left .main-left__bottom .main-left__bottom--content span h4 {
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
+  color: #11193c;
+}
+.main .main-left .main-left__bottom .main-left__bottom--content h5 {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #11193c;
+}
+.main .main-right {
+  width: 320px;
+  height: 1000px;
+}
+.main .main-right input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e4e8eb;
+  border-radius: 10px;
+  padding: 14px 19px 12px 19px;
+  font-size: 14px;
+  line-height: 22px;
+  outline: none;
+  margin-bottom: 40px;
+}
+.main .main-right input::placeholder {
+  color: #8990ad;
+}
+.main .main-right .main-right__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main .main-right .main-right__header h2 {
+  color: #11193c;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.main .main-right .main-right__header button {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #2464fc;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.main .main-right .main-right__content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 4px 23px;
+  filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
+}
+.main .main-right .main-right__content .main-right__content--post {
+  display: flex;
+  margin: 20px 0;
+}
+.main .main-right .main-right__content .main-right__content--post img {
+  width: 100px;
+  height: 70px;
+  border-radius: 4px;
+}
+.main .main-right .main-right__content .main-right__content--post span {
+  margin-left: 15px;
+  padding-right: 10px;
+}
+.main .main-right .main-right__content .main-right__content--post span p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  color: #495172;
+  margin-bottom: 10px;
+}
+.main .main-right .main-right__content .main-right__content--post span h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
   color: #11193c;
 }
 
