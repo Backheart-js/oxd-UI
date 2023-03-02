@@ -21,7 +21,9 @@
                         </span>
                     </div>
                 </div>
-                <div class="header__slogan-wrapper flex-center-y">
+            </div>
+            <div class="header__wrapper--right flex-center-y">
+                <div class="header__slogan-wrapper">
                     <div class="slogan__left-wrapper">
                         <span>おかえりなさい</span>
                     </div>
@@ -32,24 +34,34 @@
                         <span>さん</span>
                     </div>
                 </div>
+                <div class="header__func-wrapper flex-center-y">
+                    <div class="header__noti-wrapper">
+                        <button class="header__noti-btn flex-center">
+                            <img src="./assets/resources/icon/bell.png" alt="">
+                            <div class="count-noti flex-center">
+                                <p>
+                                    4
+                                </p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="header__user-wrapper">
+                        <img src="./assets/resources/images/avatar.png" alt="" class="">
+                    </div>
+                    <div class="header__logout-wrapper">
+                        <button class="header__logout-btn flex-center">
+                            <span class="">
+                                ログアウト
+                            </span>
+                            <img src="./assets/resources/icon/logout_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="header__wrapper--right flex-center-y">
-                <div class="header__noti-wrapper">
-                    <button class="header__noti-btn flex-center">
-                        <img src="./assets/resources/icon/bell.png" alt="">
-                    </button>
-                </div>
-                <div class="header__user-wrapper">
-                    <img src="./assets/resources/images/avatar.png" alt="" class="">
-                </div>
-                <div class="header__logout-wrapper">
-                    <button class="header__logout-btn flex-center">
-                        <span class="">
-                            ログアウト
-                        </span>
-                        <!-- <img src="./assets/resources/icon/logout.png" alt=""> -->
-                    </button>
-                </div>
+            <div class="header__mobileMenu-wrapper">
+                <button class="header__mobileMenu-btn">
+                    <img src="/src/assets/resources/icon/menu_icon.png" alt="" class="header__mobileMenu-icon">
+                </button>
             </div>
         </div>
     </header>
@@ -57,7 +69,89 @@
     <div id="content">
         <!-- Sidebar -->
         <aside id="sidebar">
+            <div class="sidebar__wrapper">
+                <div class="sidebar__func-wrapper">
+                    <ul class="sidebar__func-list">
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper active">
+                                <a href="/" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y ">
+                                        <img src="./assets/resources/icon/home_icon.png" alt="" class="">
+                                        <span class="">TOP</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar__subfunc-wrapper">
+                                <ul class="">
+                                    <li class="sidebar__subfunc-item">
+                                        <a href="/" class="sidebar__subfunc-link flex-center-y">
+                                            <div class="sidebar__subfunc-box flex-center-y">
+                                                <img src="./assets/resources/icon/buildings.png" alt="" class="">
+                                                <span class="">
+                                                    全社お知らせ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__subfunc-item">
+                                        <a href="/" class="sidebar__subfunc-link flex-center-y">
+                                            <div class="sidebar__subfunc-box flex-center-y">
+                                                <img src="./assets/resources/icon/building.png" alt="" class="">
+                                                <span class="">
+                                                    部署お知らせ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__subfunc-item">
+                                        <a href="/" class="sidebar__subfunc-link flex-center-y">
+                                            <div class="sidebar__subfunc-box flex-center-y">
+                                                <img src="./assets/resources/icon/chat-bubble_icon.png" alt="" class="">
+                                                <span class="">
+                                                    ブログ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper">
+                                <a href="/" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y">
+                                        <img src="./assets/resources/icon/folder_icon.png" alt="" class="">
+                                        <span class="">ドキュメント</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper">
+                                <a href="/" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y">
+                                        <img src="./assets/resources/icon/faq_icon.png" alt="" class="">
+                                        <span class="">FAQ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper">
+                                <a href="/" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y">
+                                        <img src="./assets/resources/icon/write-file_icon.png" alt="" class="">
+                                        <span class="">申請</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__social-wrapper">
 
+                </div>
+            </div>
         </aside>
 
         <!-- Content -->
