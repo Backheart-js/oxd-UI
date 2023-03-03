@@ -1,28 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OXD</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-    <header class=""  id="header">
+    <link href="//db.onlinewebfonts.com/c/3b2646a48566403a55f62ceddbecbe18?family=Hiragino+Sans+GB" rel="stylesheet" type="text/css"/>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
 
+  <body>
+    <header id="header">
+        <div class="header__wrapper">
+            <div class="header__wrapper--left flex-center-y">
+                <div class="header__brand-wrapper">
+                    <a href="#">
+                        <img src="./assets/resources/logo/logo.png" alt="" class="header__brand--logo">
+                    </a>
+                    <div class="header__brand--name flex-center">
+                        <span>
+                            OXD Portal
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__wrapper--right flex-center-y">
+                <div class="header__slogan-wrapper">
+                    <div class="slogan__left-wrapper">
+                        <span>おかえりなさい</span>
+                    </div>
+                    <div class="slogan__center-wrapper">
+                        <span>尾木 茂太郎</span>
+                    </div>
+                    <div class="slogan__right-wrapper">
+                        <span>さん</span>
+                    </div>
+                </div>
+                <div class="header__func-wrapper flex-center-y">
+                    <div class="header__noti-wrapper">
+                        <button class="header__noti-btn flex-center">
+                            <img src="./assets/resources/icon/bell.png" alt="">
+                            <div class="count-noti flex-center">
+                                <p>
+                                    4
+                                </p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="header__user-wrapper">
+                        <img src="./assets/resources/images/avatar.png" alt="" class="">
+                    </div>
+                    <div class="header__logout-wrapper">
+                        <button class="header__logout-btn flex-center">
+                            <span class="">
+                                ログアウト
+                            </span>
+                            <img src="./assets/resources/icon/logout_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__mobileMenu-wrapper">
+                <button class="header__mobileMenu-btn">
+                    <img src="/src/assets/resources/icon/menu_icon.png" alt="" class="header__mobileMenu-icon">
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div class="" >
+    <div id="content">
         <!-- Sidebar -->
-        <aside id="sidebar">
-
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar__mobilepart-wrapper">
+                <button class="sidebar__mobileClose-btn flex-center">
+                    <img src="./assets/resources/icon/close_icon.png" alt="">
+                </button>
+            </div>
+            <div class="sidebar__wrapper">
+                <div class="sidebar__func-wrapper">
+                    <ul class="sidebar__func-list">
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper active">
+                                <a href="#" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y ">
+                                        <img src="./assets/resources/icon/home_icon.png" alt="" class="">
+                                        <span class="">TOP</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar__subfunc-wrapper">
+                                <ul class="">
+                                    <li class="sidebar__subfunc-item">
+                                        <a href="#" class="sidebar__subfunc-link flex-center-y">
+                                            <div class="sidebar__subfunc-box flex-center-y">
+                                                <img src="./assets/resources/icon/buildings.png" alt="" class="">
+                                                <span class="">
+                                                    全社お知らせ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__subfunc-item">
+                                        <a href="#" class="sidebar__subfunc-link flex-center-y">
+                                            <div class="sidebar__subfunc-box flex-center-y">
+                                                <img src="./assets/resources/icon/building.png" alt="" class="">
+                                                <span class="">
+                                                    部署お知らせ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__subfunc-item">
+                                        <a href="#" class="sidebar__subfunc-link flex-center-y">
+                                            <div class="sidebar__subfunc-box flex-center-y">
+                                                <img src="./assets/resources/icon/chat-bubble_icon.png" alt="" class="">
+                                                <span class="">
+                                                    ブログ
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper">
+                                <a href="#" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y">
+                                        <img src="./assets/resources/icon/folder_icon.png" alt="" class="">
+                                        <span class="">ドキュメント</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper">
+                                <a href="#" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y">
+                                        <img src="./assets/resources/icon/faq_icon.png" alt="" class="">
+                                        <span class="">FAQ</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="sidebar__func-item">
+                            <div class="sidebar__mainfunc-wrapper">
+                                <a href="#" class="sidebar__func-link flex-center-y">
+                                    <div class="sidebar__mainfunc-box flex-center-y">
+                                        <img src="./assets/resources/icon/write-file_icon.png" alt="" class="">
+                                        <span class="">申請</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__social-wrapper">
+                    <ul class="sidebar__social-list">
+                        <li class="sidebar__social-item">
+                            <a href="#" class="sidebar__social-link">
+                                <img src="./assets/resources/icon/gmail_icon.png" alt="" class="">
+                            </a>
+                        </li>
+                        <li class="sidebar__social-item">
+                            <a href="#" class="sidebar__social-link">
+                                <img src="./assets/resources/icon/microsoft_teams_icon.png" alt="" class="">
+                            </a>
+                        </li>
+                        <li class="sidebar__social-item">
+                            <a href="#" class="sidebar__social-link">
+                                <img src="./assets/resources/icon/salesforce_icon.png" alt="" class="">
+                            </a>
+                        </li>
+                        <li class="sidebar__social-item">
+                            <a href="#" class="sidebar__social-link">
+                                <img src="./assets/resources/icon/gmail_icon.png" alt="" class="">
+                            </a>
+                        </li>
+                        <li class="sidebar__social-item">
+                            <a href="#" class="sidebar__social-link">
+                                <img src="./assets/resources/icon/microsoft_teams_icon.png" alt="" class="">
+                            </a>
+                        </li>
+                        <li class="sidebar__social-item">
+                            <a href="#" class="sidebar__social-link">
+                                <img src="./assets/resources/icon/salesforce_icon.png" alt="" class="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </aside>
 
-        <!-- Content -->
-        <main class="">
+      <!-- Content -->
+      <main id="main">
+        <div class="main">
+            <div class="main-left">
+                <div class="main-right__search--mobile">
+                    <input type="text" placeholder="フリーワード検索" />
+                    <img src="./assets/resources/icon/search_icon.png" alt="">
+                </div>
 
-        </main>
+                <div class="main-left__header">
+                  <h2>全社お知らせ</h2>
+      
+                  <span>
+                    <a>過去の一覧を見る</a>
+                    <img src="./assets/resources/icon/next_icon.png" alt="">
+                  </span>
+                </div>
+      
+                <div class="main-left__content">
+                  <div class="main-left__content--post">
+                    <div>
+                        <img src="./assets/resources/images/Rectangle-1.png" alt="" />
+      
+                        <div class="main-left__content--post-date">
+                            <span>
+                                <p>2023.2.15</p>
+                                <button>重要</button>
+                            </span>
+            
+                            <h4>社内研修のお知らせ</h4>
+            
+                            <h5>
+                                断水のお知らせ例文のご紹介です。
+                                高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                            </h5>
+                        </div>
+                    </div>
+
+                    <h5 class="main-left__content--post-mobile">
+                        断水のお知らせ例文のご紹介です。
+                        高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                    </h5>
+                  </div>
+      
+                  <div class="main-left__content--post">
+                    <div>
+                        <img src="./assets/resources/images/Rectangle-2.png" alt="" />
+      
+                        <div class="main-left__content--post-date">
+                            <span>
+                                <p>2023.2.15</p>
+                                <button>重要</button>
+                            </span>
+            
+                            <h4>社内研修のお知らせ</h4>
+            
+                            <h5>断水のお知らせ例文のご紹介です。高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…</h5>
+                        </div>
+                    </div>
+
+                    <h5 class="main-left__content--post-mobile">断水のお知らせ例文のご紹介です。高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…</h5>
+    
+                  </div>
+
+                  <div class="main-left__content--post">
+                    <div>
+                        <img src="./assets/resources/images/Rectangle-3.png" alt="" />
+      
+                        <div class="main-left__content--post-date">
+                            <span>
+                                <p>2023.2.15</p>
+                                <button>重要</button>
+                            </span>
+            
+                            <h4>夏季休暇のお知らせ</h4>
+            
+                            <h5>
+                                断水のお知らせ例文のご紹介です。
+                                高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                              </h5>
+                        </div>
+                    </div>
+
+                    <h5 class="main-left__content--post-mobile">
+                        断水のお知らせ例文のご紹介です。
+                        高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                      </h5>
+    
+                  </div>
+      
+                  <div class="main-left__content--post">
+                    <div>
+                        <img src="./assets/resources/images/Rectangle-4.png" alt="" />
+      
+                        <div class="main-left__content--post-date">
+                            <span>
+                                <p>2023.2.15</p>
+                                <button>重要</button>
+                            </span>
+            
+                            <h4>システムメンテナンスのお知らせ</h4>
+            
+                            <h5>
+                                断水のお知らせ例文のご紹介です。
+                                高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                              </h5>
+                        </div>
+                    </div>
+
+                    <h5 class="main-left__content--post-mobile">
+                        断水のお知らせ例文のご紹介です。
+                        高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                      </h5>
+    
+                  </div>
+      
+                  <div class="main-left__content--post">
+                    <div>
+                        <img src="./assets/resources/images/Rectangle-5.png" alt="" />
+      
+                        <div class="main-left__content--post-date">
+                            <span>
+                                <p>2023.2.15</p>
+                                <button>重要</button>
+                            </span>
+            
+                            <h4>年末年始休業のお知らせ（2022…</h4>
+            
+                            <h5>
+                                断水のお知らせ例文のご紹介です。
+                                高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                              </h5>
+                        </div>
+                    </div>
+
+                    <h5 class="main-left__content--post-mobile">
+                        断水のお知らせ例文のご紹介です。
+                        高架水槽、貯水槽の点検、受水槽清掃や、給湯ポンプ修理工事、水道管の緊急漏水修繕作業、水道メーター交換工事など、ビルメンテ…
+                      </h5>
+    
+                  </div> 
+                </div>
+      
+                <div class="main-left__header">
+                  <h2>全社お知らせ</h2>
+      
+                  <span>
+                    <a>過去の一覧を見る</a>
+                    <img src="./assets/resources/icon/next_icon.png" alt="">
+                  </span>
+                </div>
+      
+                <div class="main-left__bottom">
+                    <div class="main-left__bottom--content">
+                        <span>
+                            <p>2023.2.15</p>
+                            <button>カテゴリ</button>
+                        </span>
+
+                        <h4>社内研修のお知らせ</h4>
+      
+                    </div>
+                
+                    <h5>
+                    駐車場使用中止のお知らせ例文のご紹介です。
+                    駐車場使用中止のお知らせは、ビルや店舗、マンションの改修、修繕等で駐車場、駐輪場の利用中止、使用中止の予告や告知、…
+                    </h5>
+                </div>
+            </div>
+    
+            <div class="main-right">
+
+            <div class="main-right__search">
+                <input type="text" placeholder="フリーワード検索" />
+                <img src="./assets/resources/icon/search_icon.png" alt="">
+            </div>
+    
+            <div class="main-right__header">
+                <h2>ブログ</h2>
+    
+                <span>
+                <a>過去の一覧を見る</a>
+                <img src="./assets/resources/icon/next_icon.png" alt="">
+                </span>
+            </div>
+    
+            <div class="main-right__content">
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-6.png" alt="" />
+    
+                <span>
+                    <p>2023.2.15</p>
+    
+                    <h5>2022年 社員旅行 in 長崎</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-7.png" alt="" />
+    
+                <span>
+                    <p>2023.2.16</p>
+    
+                    <h5>確定拠出年金制度（401K）を導入</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-8.png" alt="" />
+    
+                <span>
+                    <p>2023.2.17</p>
+    
+                    <h5>基本給のベースアップを実施</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-9.png" alt="" />
+    
+                <span>
+                    <p>2023.2.18</p>
+    
+                    <h5>2022年度向け新人採用記事の取材</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-10.png" alt="" />
+    
+                <span>
+                    <p>2023.2.19</p>
+    
+                    <h5>2019年 社員旅行 in 台湾 2〜4日目</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-11.png" alt="" />
+    
+                <span>
+                    <p>2023.2.20</p>
+    
+                    <h5>2019年 社員旅行 in 台湾 1日目</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-12.png" alt="" />
+    
+                <span>
+                    <p>2023.2.21</p>
+    
+                    <h5>インターンシップはじめました</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-13.png" alt="" />
+    
+                <span>
+                    <p>2023.2.22</p>
+    
+                    <h5>ヴィジョン（2019年6月現在）</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-14.png" alt="" />
+    
+                <span>
+                    <p>2023.2.23</p>
+    
+                    <h5>CI(Continuous Integration)勉強会</h5>
+                </span>
+                </div>
+    
+                <div class="main-right__content--post">
+                <img src="./assets/resources/images/Rectangle-15.png" alt="" />
+    
+                <span>
+                    <p>2023.2.24</p>
+    
+                    <h5>2019年 お花見</h5>
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+      </main>
     </div>
 
-</body>
+    <script src="./assets/js/scripts.js"></script>
+  </body>
 </html>
