@@ -63,11 +63,9 @@ button {
 
 .header__brand-wrapper {
   display: flex;
-  display: flex;
 }
 
 .header__brand--name {
-  margin-left: 15px;
   margin-left: 15px;
 }
 .header__brand--name span {
@@ -415,7 +413,7 @@ button {
 
 #content {
   margin-top: 100px;
-  margin-top: 100px;
+  background-color: #F6F6F6;
 }
 
 #sidebar {
@@ -488,9 +486,184 @@ button {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 375px) {
+.sidebar__social-wrapper {
+  padding-right: 36px;
+  margin-top: 31px;
+}
+
+.sidebar__social-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+}
+
+.sidebar__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
+  border-radius: 10px;
+}
+
+.sidebar__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 63.9375em) {
+  .header__mobileMenu-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+  }
+  .header__mobileMenu-wrapper .header__mobileMenu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 4px;
+    background-color: transparent;
+  }
   #sidebar {
-    display: none;
+    left: unset;
+    width: 238px;
+    padding-left: unset;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  #sidebar .sidebar__mobilepart-wrapper {
+    position: relative;
+    height: 101px;
+  }
+  #sidebar .sidebar__mobilepart-wrapper .sidebar__mobileClose-btn {
+    position: absolute;
+    right: 13px;
+    top: 40px;
+    padding: 4px;
+    background-color: transparent;
+  }
+  #sidebar .sidebar__wrapper {
+    margin-top: 0;
+  }
+  .sidebar {
+    right: -238px;
+  }
+  .sidebar.show {
+    right: 0;
+  }
+  .sidebar__mainfunc-wrapper {
+    padding-left: 0;
+    height: 50px;
+  }
+  .sidebar__mainfunc-wrapper a {
+    padding-left: 17px;
+    height: 100%;
+  }
+  .sidebar__mainfunc-wrapper.active {
+    padding: 0;
+    background-color: transparent;
+    border: unset;
+  }
+  .sidebar__subfunc-wrapper {
+    margin-top: 0;
+  }
+  .sidebar__func-item {
+    border-top: 2px solid #F0F4F7;
+  }
+  .sidebar__func-item:last-child {
+    border-bottom: 2px solid #F0F4F7;
+  }
+  .sidebar__func-item + .sidebar__func-item {
+    margin-top: 0;
+  }
+  .sidebar__subfunc-item {
+    height: 50px;
+    border-top: 2px solid #F0F4F7;
+    padding: 0;
+  }
+  .sidebar__subfunc-item a {
+    padding-left: 53px;
+    height: 100%;
+  }
+  .sidebar__subfunc-item + .sidebar__subfunc-item {
+    margin-top: 0;
+  }
+  .sidebar__social-wrapper {
+    padding: 0 17px;
+  }
+}
+@media only screen and (max-width: 46.1875em) {
+  #header {
+    height: 101px;
+    padding: 0 10px 0 18px;
+  }
+  #header .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__brand-wrapper {
+    display: block;
+  }
+  .header__brand-wrapper .header__brand--logo {
+    width: 42px;
+  }
+  .header__brand-wrapper .header__brand--name {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  .header__brand-wrapper .header__brand--name span {
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .header__wrapper--right {
+    display: block;
+    height: 58px;
+    width: 194px;
+    flex-grow: 0;
+  }
+  .header__slogan-wrapper {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .header__slogan-wrapper .slogan__left-wrapper span, .header__slogan-wrapper .slogan__right-wrapper span {
+    font-size: 11px;
+  }
+  .header__slogan-wrapper .slogan__left-wrapper {
+    margin-right: 3px;
+  }
+  .header__slogan-wrapper .slogan__right-wrapper {
+    margin-left: 5px;
+  }
+  .header__slogan-wrapper .slogan__center-wrapper span {
+    font-size: 14px;
+  }
+  .header__user-wrapper {
+    width: 30px;
+  }
+  .header__user-wrapper img {
+    width: 100%;
+  }
+  .header__func-wrapper {
+    width: 100%;
+    margin-top: 6px;
+  }
+  .header__logout-wrapper .header__logout-btn {
+    width: 104px;
+    height: 28px;
+  }
+  .header__logout-wrapper .header__logout-btn span {
+    font-size: 12px;
+  }
+  .header__logout-wrapper .header__logout-btn img {
+    width: 14px;
+    margin-left: 6px;
   }
   .main {
     width: 340px;
