@@ -294,6 +294,11 @@ button {
   line-height: 23px;
   color: #11193c;
   margin: 4px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main-left__content--post div .main-left__content--post-date h5 {
   font-size: 11px;
@@ -362,6 +367,11 @@ button {
   line-height: 28px;
   color: #11193c;
   cursor: pointer;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-right {
@@ -794,6 +804,13 @@ button {
   }
   .main-left__content--post {
     display: block;
+  }
+  .main-left__content--post div .main-left__content--post-date h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .main-left__content--post div .main-left__content--post-date h5 {
     display: none;

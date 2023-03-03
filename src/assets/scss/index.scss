@@ -326,6 +326,11 @@ button {
         line-height: 23px;
         color: #11193c;
         margin: 4px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       h5 {
@@ -403,6 +408,11 @@ button {
     line-height: 28px;
     color: #11193c;
     cursor: pointer;
+    display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
   }
 }
 
@@ -905,6 +915,13 @@ button {
 
     div {
       .main-left__content--post-date {
+        h4 {
+          display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
         h5 {
           display: none;
         }
