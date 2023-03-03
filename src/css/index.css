@@ -189,71 +189,92 @@ button {
   background-color: #f0f4f7;
   width: 1096px;
   height: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 130px;
+  margin-top: 130px;
+  margin-left: 269px;
   border-top-left-radius: 10px;
   filter: drop-shadow(0px 0px 7.5px rgba(0, 0, 0, 0.08));
   border: 1px solid #eee;
   padding: 50px 48px;
   display: flex;
+  flex: 1;
   justify-content: space-between;
+  z-index: 10;
 }
-.main .main-left {
+
+.main-left {
   width: 650px;
   height: 630px;
+  margin-right: 30px;
 }
-.main .main-left .main-left__header {
+
+.main-left__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.main .main-left .main-left__header h2 {
+.main-left__header h2 {
   color: #11193c;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
 }
-.main .main-left .main-left__header button {
+.main-left__header a {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 12px;
   line-height: 28px;
   color: #2464fc;
+  cursor: pointer;
 }
-.main .main-left .main-left__content {
+
+.main-left__content {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px 35px;
   margin-bottom: 40px;
   filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
 }
-.main .main-left .main-left__content .main-left__content--post {
+
+.main-left__content--post {
   display: flex;
   margin: 10px 0;
+  cursor: pointer;
 }
-.main .main-left .main-left__content .main-left__content--post img {
+.main-left__content--post img {
   width: 130px;
   height: 90px;
   border-radius: 4px;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date {
+.main-left__content--post h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #11193c;
+  margin: 4px 0;
+}
+.main-left__content--post h5 {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #11193c;
+}
+
+.main-left__content--post-date {
   padding: 5px 4px 5px 10px;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span {
+.main-left__content--post-date span {
   display: flex;
   align-items: center;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span p {
+.main-left__content--post-date span p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span button {
+.main-left__content--post-date span button {
   width: 36px;
   height: 18px;
   background-color: #ff4b75;
@@ -266,39 +287,28 @@ button {
   color: #fff;
   margin-left: 6px;
 }
-.main .main-left .main-left__content .main-left__content--post h4 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 23px;
-  color: #11193c;
-  margin: 4px 0;
-}
-.main .main-left .main-left__content .main-left__content--post h5 {
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #11193c;
-}
-.main .main-left .main-left__bottom {
+
+.main-left__bottom {
   background-color: #fff;
   border-radius: 10px;
   padding: 29px 35px;
   display: flex;
 }
-.main .main-left .main-left__bottom p {
+.main-left__bottom p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content {
+
+.main-left__bottom--content {
   margin-left: 24px;
   filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
 }
-.main .main-left .main-left__bottom .main-left__bottom--content span {
+.main-left__bottom--content span {
   display: flex;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content span button {
+.main-left__bottom--content span button {
   width: 70px;
   height: 22px;
   border-radius: 100px;
@@ -309,25 +319,29 @@ button {
   border: none;
   outline: none;
   margin-right: 15px;
+  cursor: pointer;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content span h4 {
+.main-left__bottom--content span h4 {
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
   color: #11193c;
+  cursor: pointer;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content h5 {
+.main-left__bottom--content h5 {
   margin-top: 10px;
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
   color: #11193c;
+  cursor: pointer;
 }
-.main .main-right {
+
+.main-right {
   width: 320px;
   height: 1000px;
 }
-.main .main-right input {
+.main-right input {
   width: 100%;
   height: 40px;
   border: 1px solid #e4e8eb;
@@ -338,21 +352,22 @@ button {
   outline: none;
   margin-bottom: 40px;
 }
-.main .main-right input::placeholder {
+.main-right input::placeholder {
   color: #8990ad;
 }
-.main .main-right .main-right__header {
+
+.main-right__header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.main .main-right .main-right__header h2 {
+.main-right__header h2 {
   color: #11193c;
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
 }
-.main .main-right .main-right__header button {
+.main-right__header a {
   font-size: 12px;
   font-weight: 400;
   line-height: 28px;
@@ -360,34 +375,38 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
-.main .main-right .main-right__content {
+
+.main-right__content {
   background-color: #fff;
   border-radius: 10px;
-  padding: 4px 23px;
+  padding: 4px 21px 4px 23px;
   filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
 }
-.main .main-right .main-right__content .main-right__content--post {
+
+.main-right__content--post {
   display: flex;
   margin: 20px 0;
+  cursor: pointer;
 }
-.main .main-right .main-right__content .main-right__content--post img {
+.main-right__content--post img {
   width: 100px;
   height: 70px;
   border-radius: 4px;
 }
-.main .main-right .main-right__content .main-right__content--post span {
+.main-right__content--post span {
   margin-left: 15px;
   padding-right: 10px;
 }
-.main .main-right .main-right__content .main-right__content--post span p {
+.main-right__content--post span p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
   margin-bottom: 10px;
 }
-.main .main-right .main-right__content .main-right__content--post span h5 {
+.main-right__content--post span h5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -437,7 +456,8 @@ button {
   filter: drop-shadow(0px 0px 7.5px rgba(0, 0, 0, 0.08));
 }
 
-.sidebar__mainfunc-box span, .sidebar__subfunc-box span {
+.sidebar__mainfunc-box span,
+.sidebar__subfunc-box span {
   font-family: "hiragino sans";
   font-size: 16px;
   font-weight: 400;
@@ -466,6 +486,24 @@ button {
 
 .sidebar__func-link {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+  #sidebar {
+    display: none;
+  }
+  .main {
+    width: 340px;
+    margin: 0;
+    padding: 30px 18px;
+    display: block;
+  }
+  .main-left {
+    width: 100%;
+  }
+  .main-right {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
