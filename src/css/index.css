@@ -1,7 +1,14 @@
+@import url(//db.onlinewebfonts.com/c/3b2646a48566403a55f62ceddbecbe18?family=Hiragino+Sans+GB);
+@font-face {
+  font-family: "Hiragino Sans GB";
+  src: url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.eot");
+  src: url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.woff") format("woff"), url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3b2646a48566403a55f62ceddbecbe18.svg#Hiragino Sans GB") format("svg");
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Hiragino Sans GB";
 }
 
 button {
@@ -100,7 +107,6 @@ button {
   margin-right: 14px;
 }
 .slogan__left-wrapper span {
-  font-family: "hiragino sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 28px;
@@ -110,7 +116,6 @@ button {
 }
 
 .slogan__center-wrapper span {
-  font-family: "hiragino sans";
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
@@ -123,7 +128,6 @@ button {
   margin-left: 7px;
 }
 .slogan__right-wrapper span {
-  font-family: "hiragino sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 28px;
@@ -185,75 +189,95 @@ button {
 }
 
 /* --main--- */
-.main {
-  background-color: #f0f4f7;
-  width: 1096px;
+#main {
+  width: auto;
   height: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 130px;
+  background-color: #f0f4f7;
   border-top-left-radius: 10px;
-  filter: drop-shadow(0px 0px 7.5px rgba(0, 0, 0, 0.08));
+  margin-left: 269px;
   border: 1px solid #eee;
+  margin-top: 130px;
   padding: 50px 48px;
-  display: flex;
-  justify-content: space-between;
+  filter: drop-shadow(0px 0px 7.5px rgba(0, 0, 0, 0.08));
 }
-.main .main-left {
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.main-left {
   width: 650px;
   height: 630px;
+  margin-right: 30px;
 }
-.main .main-left .main-left__header {
+
+.main-right__search--mobile {
+  display: none;
+}
+
+.main-left__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
-.main .main-left .main-left__header h2 {
+.main-left__header h2 {
   color: #11193c;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
 }
-.main .main-left .main-left__header button {
+.main-left__header a,
+.main-left__header img {
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 12px;
   line-height: 28px;
   color: #2464fc;
+  cursor: pointer;
 }
-.main .main-left .main-left__content {
+
+.main-left__content {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px 35px;
+  padding: 10px 35px;
   margin-bottom: 40px;
   filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
 }
-.main .main-left .main-left__content .main-left__content--post {
+
+.main-left__content--post {
   display: flex;
-  margin: 10px 0;
+  margin: 20px 0;
+  cursor: pointer;
+  height: 90px;
 }
-.main .main-left .main-left__content .main-left__content--post img {
+.main-left__content--post div {
+  display: flex;
+}
+.main-left__content--post div img {
   width: 130px;
   height: 90px;
   border-radius: 4px;
+  object-fit: cover;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date {
+.main-left__content--post div .main-left__content--post-date {
   padding: 5px 4px 5px 10px;
+  display: block;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span {
+.main-left__content--post div .main-left__content--post-date span {
   display: flex;
   align-items: center;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span p {
+.main-left__content--post div .main-left__content--post-date span p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
+  font-family: "Inter", sans-serif;
 }
-.main .main-left .main-left__content .main-left__content--post .main-left__content--post-date span button {
+.main-left__content--post div .main-left__content--post-date span button {
   width: 36px;
   height: 18px;
   background-color: #ff4b75;
@@ -266,39 +290,56 @@ button {
   color: #fff;
   margin-left: 6px;
 }
-.main .main-left .main-left__content .main-left__content--post h4 {
+.main-left__content--post div .main-left__content--post-date h4 {
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
   color: #11193c;
   margin: 4px 0;
 }
-.main .main-left .main-left__content .main-left__content--post h5 {
+.main-left__content--post div .main-left__content--post-date h5 {
   font-size: 11px;
   font-weight: 400;
   line-height: 20px;
   color: #11193c;
+  display: flex;
+  word-wrap: break-word;
 }
-.main .main-left .main-left__bottom {
+.main-left__content--post .main-left__content--post-mobile {
+  display: none;
+}
+
+.main-left__bottom {
   background-color: #fff;
   border-radius: 10px;
   padding: 29px 35px;
+  filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
+}
+.main-left__bottom h5 {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #11193c;
+  cursor: pointer;
+  margin-left: 74px;
+}
+
+.main-left__bottom--content {
   display: flex;
 }
-.main .main-left .main-left__bottom p {
+.main-left__bottom--content span {
+  display: flex;
+  align-items: center;
+}
+.main-left__bottom--content span p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
+  font-family: "Inter", sans-serif;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content {
-  margin-left: 24px;
-  filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
-}
-.main .main-left .main-left__bottom .main-left__bottom--content span {
-  display: flex;
-}
-.main .main-left .main-left__bottom .main-left__bottom--content span button {
+.main-left__bottom--content span button {
   width: 70px;
   height: 22px;
   border-radius: 100px;
@@ -309,25 +350,26 @@ button {
   border: none;
   outline: none;
   margin-right: 15px;
+  margin-left: 24px;
+  cursor: pointer;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content span h4 {
-  font-size: 11px;
+.main-left__bottom--content h4 {
+  font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 28px;
   color: #11193c;
+  cursor: pointer;
 }
-.main .main-left .main-left__bottom .main-left__bottom--content h5 {
-  margin-top: 10px;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #11193c;
-}
-.main .main-right {
+
+.main-right {
   width: 320px;
-  height: 1000px;
+  height: auto;
 }
-.main .main-right input {
+
+.main-right__search {
+  position: relative;
+}
+.main-right__search input {
   width: 100%;
   height: 40px;
   border: 1px solid #e4e8eb;
@@ -338,21 +380,30 @@ button {
   outline: none;
   margin-bottom: 40px;
 }
-.main .main-right input::placeholder {
+.main-right__search input::placeholder {
   color: #8990ad;
 }
-.main .main-right .main-right__header {
+.main-right__search img {
+  width: 15.5px;
+  height: 15.5px;
+  position: absolute;
+  top: 15%;
+  right: 19px;
+  color: #2464fc;
+}
+
+.main-right__header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
-.main .main-right .main-right__header h2 {
+.main-right__header h2 {
   color: #11193c;
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
 }
-.main .main-right .main-right__header button {
+.main-right__header a {
   font-size: 12px;
   font-weight: 400;
   line-height: 28px;
@@ -360,34 +411,40 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor: pointer;
 }
-.main .main-right .main-right__content {
+
+.main-right__content {
   background-color: #fff;
   border-radius: 10px;
-  padding: 4px 23px;
+  padding: 4px 21px 4px 23px;
   filter: drop-shadow(0px 3px 13px rgba(0, 0, 0, 0.09));
 }
-.main .main-right .main-right__content .main-right__content--post {
+
+.main-right__content--post {
   display: flex;
   margin: 20px 0;
+  cursor: pointer;
 }
-.main .main-right .main-right__content .main-right__content--post img {
+.main-right__content--post img {
   width: 100px;
   height: 70px;
   border-radius: 4px;
 }
-.main .main-right .main-right__content .main-right__content--post span {
+.main-right__content--post span {
   margin-left: 15px;
-  padding-right: 10px;
+  padding-right: 6px;
+  padding-top: 3px;
 }
-.main .main-right .main-right__content .main-right__content--post span p {
+.main-right__content--post span p {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   color: #495172;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  font-family: "Inter", sans-serif;
 }
-.main .main-right .main-right__content .main-right__content--post span h5 {
+.main-right__content--post span h5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -437,8 +494,8 @@ button {
   filter: drop-shadow(0px 0px 7.5px rgba(0, 0, 0, 0.08));
 }
 
-.sidebar__mainfunc-box span, .sidebar__subfunc-box span {
-  font-family: "hiragino sans";
+.sidebar__mainfunc-box span,
+.sidebar__subfunc-box span {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -466,6 +523,128 @@ button {
 
 .sidebar__func-link {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9374em) {
+  #sidebar {
+    display: none;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px 18px;
+  }
+  .main {
+    padding: 0;
+  }
+  .main-left .main-left__content .main-left__content--post-date {
+    padding-top: 0;
+  }
+  .main-left .main-left__content .main-left__content--post-date h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .main-left .main-left__content .main-left__content--post-date h5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .main-right__content--post span h5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (max-width: 46.1875em) {
+  #sidebar {
+    display: none;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px 18px;
+  }
+  .main {
+    display: block;
+    padding-bottom: 0px;
+  }
+  .main-left {
+    width: 100%;
+    height: 100%;
+  }
+  .main-right__search--mobile {
+    position: relative;
+    display: block;
+  }
+  .main-right__search--mobile input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e4e8eb;
+    border-radius: 10px;
+    padding: 14px 19px 12px 19px;
+    font-size: 14px;
+    line-height: 22px;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  .main-right__search--mobile input::placeholder {
+    color: #8990ad;
+  }
+  .main-right__search--mobile img {
+    width: 15.5px;
+    height: 15.5px;
+    position: absolute;
+    top: 19%;
+    right: 19px;
+    color: #2464fc;
+  }
+  .main-left__content {
+    padding: 10px 20px 10px 19px;
+  }
+  .main-left__content--post {
+    display: block;
+  }
+  .main-left__content--post div .main-left__content--post-date h5 {
+    display: none;
+  }
+  .main-left__content--post .main-left__content--post-mobile {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #11193c;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .main-left__bottom {
+    padding: 10px 20px 10px 19px;
+    margin-bottom: 31px;
+  }
+  .main-left__bottom .main-left__bottom--content {
+    display: block;
+  }
+  .main-left__bottom .main-left__bottom--content h4 {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .main-left__bottom h5 {
+    margin: 0;
+  }
+  .main-right {
+    width: 100%;
+  }
+  .main-right .main-right__search {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
