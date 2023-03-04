@@ -77,18 +77,10 @@ button {
 }
 .header__brand--name span {
   font-family: "inter";
+  width: 105px;
   font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
-  font-style: normal;
-  color: #fff;
-  user-select: none;
-}
-.header__brand--name span {
-  font-family: "inter";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
+  line-height: 17px;
   font-style: normal;
   color: #fff;
   user-select: none;
@@ -223,16 +215,25 @@ button {
 .main-left__header h2 {
   color: #11193c;
   font-size: 22px;
+  width: 133px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 23px;
 }
-.main-left__header a,
-.main-left__header img {
+.main-left__header a {
+  display: inline-block;
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 12px;
-  line-height: 28px;
+  line-height: 12px;
+  color: #2464fc;
+  cursor: pointer;
+  width: 97px;
+  height: 12px;
+}
+.main-left__header img {
+  font-size: 12px;
+  line-height: 12px;
   color: #2464fc;
   cursor: pointer;
 }
@@ -344,6 +345,8 @@ button {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
+  height: 11px;
+  width: 58px;
   color: #495172;
   font-family: "Inter", sans-serif;
 }
@@ -414,17 +417,23 @@ button {
   color: #11193c;
   font-size: 22px;
   line-height: 28px;
+  text-align: center;
+  width: 67px;
+  height: 20px;
   font-weight: 400;
 }
 .main-right__header a {
+  display: inline-block;
   font-size: 12px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 12px;
   color: #2464fc;
   border: none;
   outline: none;
   background-color: transparent;
   cursor: pointer;
+  width: 97px;
+  height: 12px;
 }
 
 .main-right__content {
@@ -466,7 +475,7 @@ button {
 
 #content {
   margin-top: 100px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 #sidebar {
@@ -494,13 +503,15 @@ button {
 
 .sidebar__mainfunc-wrapper {
   padding-left: 20px;
+  z-index: 1000;
+  width: 241px;
 }
 .sidebar__mainfunc-wrapper.active {
   padding: 10px 0 10px 20px;
   border-color: #eeeeee;
   border-width: 1px;
-  border-right-width: 0px;
   border-style: solid;
+  border-right-color: #f0f4f7;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   background: #f0f4f7;
@@ -586,7 +597,8 @@ button {
     justify-content: center;
     margin-left: 0;
   }
-  .header__slogan-wrapper .slogan__left-wrapper span, .header__slogan-wrapper .slogan__right-wrapper span {
+  .header__slogan-wrapper .slogan__left-wrapper span,
+  .header__slogan-wrapper .slogan__right-wrapper span {
     font-size: 11px;
   }
   .header__slogan-wrapper .slogan__left-wrapper {
@@ -617,6 +629,7 @@ button {
   }
   .header__logout-wrapper .header__logout-btn img {
     width: 14px;
+    height: 14px;
     margin-left: 6px;
   }
   .header__mobileMenu-wrapper {
@@ -632,6 +645,7 @@ button {
     align-items: center;
     padding: 6px 4px;
     background-color: transparent;
+    cursor: pointer;
   }
   #sidebar {
     left: unset;
@@ -651,6 +665,7 @@ button {
     top: 40px;
     padding: 4px;
     background-color: transparent;
+    cursor: pointer;
   }
   #sidebar .sidebar__wrapper {
     margin-top: 0;
@@ -678,17 +693,17 @@ button {
     margin-top: 0;
   }
   .sidebar__func-item {
-    border-top: 2px solid #F0F4F7;
+    border-top: 2px solid #f0f4f7;
   }
   .sidebar__func-item:last-child {
-    border-bottom: 2px solid #F0F4F7;
+    border-bottom: 2px solid #f0f4f7;
   }
   .sidebar__func-item + .sidebar__func-item {
     margin-top: 0;
   }
   .sidebar__subfunc-item {
     height: 50px;
-    border-top: 2px solid #F0F4F7;
+    border-top: 2px solid #f0f4f7;
     padding: 0;
   }
   .sidebar__subfunc-item a {
@@ -757,13 +772,14 @@ button {
   }
   .header__brand-wrapper .header__brand--name span {
     font-size: 14px;
+    width: 74px;
     line-height: 100%;
   }
   #main {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 30px 18px;
+    padding: 30px 16.5px;
   }
   .main {
     display: block;
@@ -843,6 +859,9 @@ button {
   }
   .main-right .main-right__search {
     display: none;
+  }
+  .main-right__content--post {
+    margin: 14px 0;
   }
 }
 
